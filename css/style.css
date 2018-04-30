@@ -1,0 +1,804 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  font-family: ｍｓ ｐゴシック,ms pgothic,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,osaka,sans-serif;
+  color: #C7C7C7; }
+  * p {
+    margin: 0; }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 5293px; }
+
+.content {
+  width: 980px;
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+  -ms-transform: translatex(-50%);
+  transform: translatex(-50%); }
+
+.video {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%; }
+
+#navbar {
+  height: 139px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  #navbar .navContent {
+    width: 980px;
+    height: 139px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #navbar .navContent .navItem {
+      display: inline-block;
+      margin-left: 46px;
+      margin-right: 46px;
+      color: white;
+      font-size: 14px;
+      cursor: pointer; }
+      #navbar .navContent .navItem.view {
+        color: orange; }
+
+#header {
+  height: 842px;
+  width: 980px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  #header .headerImg {
+    width: 883px;
+    height: 448px;
+    top: 25px; }
+  #header .img1 {
+    width: 196px;
+    height: 44px;
+    left: 156px;
+    position: absolute;
+    top: 561px; }
+  #header .textNew {
+    font-size: 12px;
+    text-align: right;
+    position: absolute;
+    color: white; }
+    #header .textNew.text1 {
+      left: 156px;
+      top: 526px; }
+    #header .textNew.text2 {
+      left: 498px;
+      top: 562px; }
+    #header .textNew.text3 {
+      left: 649px;
+      position: absolute;
+      top: 580px;
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      text-align: left; }
+
+#section_aboutIsland {
+  height: 1053px;
+  width: 100%;
+  position: absolute;
+  top: 842px; }
+  #section_aboutIsland .descImg {
+    left: 592px;
+    position: absolute;
+    top: 213px;
+    width: 175px;
+    height: 213px; }
+  #section_aboutIsland .title {
+    letter-spacing: 0.1em;
+    color: white;
+    left: 46px;
+    width: 345px;
+    position: absolute;
+    top: 526px;
+    font-size: 16px;
+    font-weight: bold; }
+  #section_aboutIsland .dash {
+    left: 46px;
+    width: 14px;
+    position: absolute;
+    top: 581px;
+    height: 1px;
+    background-color: #fff; }
+  #section_aboutIsland .descript {
+    color: white;
+    left: 46px;
+    width: 287px;
+    position: absolute;
+    top: 607px;
+    font-size: 11px;
+    line-height: 1.8em;
+    text-align: justify; }
+  #section_aboutIsland .youtube {
+    left: 413px;
+    position: absolute;
+    top: 587px; }
+  #section_aboutIsland .partBgc {
+    width: 100%;
+    height: 100%; }
+
+#section_movieIntroduction {
+  height: 1017px;
+  width: 100%;
+  position: absolute;
+  top: 1895px;
+  color: white; }
+  #section_movieIntroduction .movieIntro {
+    left: 53px;
+    width: 345px;
+    position: absolute;
+    top: 141px;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    line-height: 1.8em; }
+  #section_movieIntroduction .movieIntroContent {
+    left: 53px;
+    width: 237px;
+    position: absolute;
+    top: 222px; }
+    #section_movieIntroduction .movieIntroContent .movieIntro1 {
+      font-size: 14px;
+      line-height: 1.8em;
+      text-align: justify; }
+    #section_movieIntroduction .movieIntroContent .movieIntro2 {
+      font-size: 11px;
+      line-height: 1.8em;
+      text-align: justify; }
+  #section_movieIntroduction .movieTheater {
+    left: 393px;
+    width: 345px;
+    position: absolute;
+    top: 141px;
+    font-size: 16px;
+    line-height: 1.8em; }
+  #section_movieIntroduction .theaterContent {
+    left: 393px;
+    width: 350px;
+    position: absolute;
+    top: 222px; }
+    #section_movieIntroduction .theaterContent .theaters {
+      font-size: 11px;
+      line-height: 1.8em;
+      letter-spacing: 0.1em; }
+  #section_movieIntroduction .moreInfroBtn {
+    left: 644px;
+    width: 99px;
+    position: absolute;
+    top: 302px;
+    height: 32px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background-repeat: no-repeat;
+    background-image: url("../image/moreInfoBtn.png"); }
+    #section_movieIntroduction .moreInfroBtn:hover {
+      background-image: url("../image/moreInfoBtn2.png"); }
+  #section_movieIntroduction .btn1 {
+    left: 41px;
+    width: 144px;
+    position: absolute;
+    top: 416px;
+    height: 124px;
+    background-image: url("../image/btn1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+    #section_movieIntroduction .btn1:hover {
+      background-image: url("../image/btn1-2.png"); }
+  #section_movieIntroduction .btn2 {
+    left: 215px;
+    width: 216px;
+    position: absolute;
+    top: 416px;
+    height: 124px;
+    background-image: url("../image/btn2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+    #section_movieIntroduction .btn2:hover {
+      background-image: url("../image/btn2-2.png"); }
+  #section_movieIntroduction .btn3 {
+    left: 471px;
+    width: 259px;
+    position: absolute;
+    top: 416px;
+    height: 124px;
+    background-image: url("../image/btn3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+    #section_movieIntroduction .btn3:hover {
+      background-image: url("../image/btn3-2.png"); }
+  #section_movieIntroduction .btn4 {
+    left: 41px;
+    width: 144px;
+    position: absolute;
+    top: 609px;
+    height: 124px;
+    background-image: url("../image/btn4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+    #section_movieIntroduction .btn4:hover {
+      background-image: url("../image/btn4-2.png"); }
+  #section_movieIntroduction .btn5 {
+    left: 223px;
+    width: 177px;
+    position: absolute;
+    top: 609px;
+    height: 124px;
+    background-image: url("../image/btn5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+    #section_movieIntroduction .btn5:hover {
+      background-image: url("../image/btn5-2.png"); }
+  #section_movieIntroduction .btn6 {
+    left: 456px;
+    width: 93px;
+    position: absolute;
+    top: 609px;
+    height: 124px;
+    background-image: url("../image/btn6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+    #section_movieIntroduction .btn6:hover {
+      background-image: url("../image/btn6-2.png"); }
+  #section_movieIntroduction .btn7 {
+    left: 620px;
+    width: 147px;
+    position: absolute;
+    top: 609px;
+    height: 124px;
+    background-image: url("../image/btn7.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+    #section_movieIntroduction .btn7:hover {
+      background-image: url("../image/btn7-2.png"); }
+  #section_movieIntroduction #order1 {
+    top: 818px;
+    left: 41px; }
+
+#section_saleInformation {
+  height: 1229px;
+  width: 100%;
+  position: absolute;
+  top: 2912px;
+  color: white; }
+  #section_saleInformation .part3_title {
+    left: 46px;
+    width: 345px;
+    position: absolute;
+    top: 135px; }
+  #section_saleInformation .combination {
+    left: 46px;
+    width: 537px;
+    position: absolute;
+    top: 216px; }
+    #section_saleInformation .combination .comination_title {
+      font-size: 14px;
+      line-height: 1.8em;
+      text-align: justify;
+      letter-spacing: 0.1em; }
+    #section_saleInformation .combination .combination_info {
+      font-size: 11px;
+      line-height: 1.8em;
+      text-align: justify;
+      letter-spacing: 0.1em; }
+  #section_saleInformation .combination_obj1 {
+    left: 46px;
+    position: absolute;
+    top: 444px;
+    height: 101px;
+    width: 324px; }
+    #section_saleInformation .combination_obj1 .postcard {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      height: 76px;
+      width: 92.233px;
+      margin: 0px 4px; }
+    #section_saleInformation .combination_obj1 .ticket {
+      position: absolute;
+      left: 111px;
+      top: 0px;
+      height: 55.4057px;
+      width: 101px;
+      margin: 10px 0px; }
+    #section_saleInformation .combination_obj1 .forum {
+      position: absolute;
+      left: 222px;
+      top: 0px;
+      height: 76px;
+      width: 51.2387px;
+      margin: 0px 24px; }
+  #section_saleInformation #textNewOne {
+    left: 46px;
+    width: 411px;
+    position: absolute;
+    top: 561px; }
+    #section_saleInformation #textNewOne p {
+      font-size: 11px;
+      line-height: 1.8em;
+      text-align: justify;
+      letter-spacing: 0.1em; }
+    #section_saleInformation #textNewOne .title1 {
+      letter-spacing: 0.1em;
+      font-size: 11px;
+      line-height: 1.8em;
+      text-align: justify; }
+    #section_saleInformation #textNewOne .title2 {
+      letter-spacing: 0.1em;
+      font-size: 20px;
+      line-height: 1.8em;
+      text-align: justify; }
+  #section_saleInformation #textNewTwo {
+    left: 46px;
+    width: 411px;
+    position: absolute;
+    top: 749px; }
+    #section_saleInformation #textNewTwo p {
+      font-size: 11px;
+      line-height: 1.8em;
+      text-align: justify;
+      letter-spacing: 0.1em; }
+  #section_saleInformation .preOrderBtn.order1#obj1 {
+    top: 561px;
+    left: 358px; }
+  #section_saleInformation .combination_obj2 {
+    left: 490px;
+    position: absolute;
+    top: 444px;
+    height: 101px;
+    width: 391px; }
+    #section_saleInformation .combination_obj2 .ticket {
+      position: absolute;
+      height: 67.4743px;
+      width: 123px;
+      margin: 4px 0px;
+      top: 0px;
+      left: 0px; }
+    #section_saleInformation .combination_obj2 .pen {
+      position: absolute;
+      height: 56.1761px;
+      width: 123px;
+      margin: 9px 0px;
+      left: 133px;
+      top: 0px; }
+  #section_saleInformation #textNewThird {
+    left: 490px;
+    width: 442px;
+    position: absolute;
+    top: 561px; }
+    #section_saleInformation #textNewThird p {
+      font-size: 11px;
+      line-height: 1.8em;
+      text-align: justify;
+      letter-spacing: 0.1em; }
+    #section_saleInformation #textNewThird .title1 {
+      letter-spacing: 0.1em;
+      font-size: 11px;
+      line-height: 1.8em;
+      text-align: justify; }
+    #section_saleInformation #textNewThird .title2 {
+      letter-spacing: 0.1em;
+      font-size: 20px;
+      line-height: 1.8em;
+      text-align: justify; }
+  #section_saleInformation .preOrderBtn.order1#obj2 {
+    left: 881px;
+    top: 561px; }
+  #section_saleInformation .preOrderBtn.order1#obj1-2 {
+    left: 358px;
+    top: 749px; }
+  #section_saleInformation .combination_obj3 {
+    left: 46px;
+    position: absolute;
+    top: 926px;
+    height: 101px;
+    width: 324px; }
+    #section_saleInformation .combination_obj3 .postcard {
+      height: 76px;
+      width: 92.233px;
+      margin: 0px 4px;
+      position: absolute;
+      left: 0px;
+      top: 0px; }
+    #section_saleInformation .combination_obj3 .ticket {
+      height: 55.4057px;
+      width: 101px;
+      margin: 10px 0px;
+      position: absolute;
+      left: 111px;
+      top: 0px; }
+    #section_saleInformation .combination_obj3 .lecture {
+      position: absolute;
+      left: 222px;
+      top: 0px;
+      height: 76px;
+      width: 48.8738px;
+      margin: 0px 26px; }
+  #section_saleInformation #textNewFour {
+    left: 46px;
+    width: 411px;
+    position: absolute;
+    top: 1060px; }
+    #section_saleInformation #textNewFour p {
+      font-size: 11px;
+      line-height: 1.8em;
+      text-align: justify;
+      letter-spacing: 0.1em; }
+    #section_saleInformation #textNewFour .title1 {
+      letter-spacing: 0.1em;
+      font-size: 11px;
+      line-height: 1.8em;
+      text-align: justify; }
+    #section_saleInformation #textNewFour .title2 {
+      letter-spacing: 0.1em;
+      font-size: 20px;
+      line-height: 1.8em;
+      text-align: justify; }
+  #section_saleInformation .preOrderBtn.order1#obj3 {
+    left: 358px;
+    top: 1060px; }
+  #section_saleInformation .combination_obj4 {
+    left: 490px;
+    position: absolute;
+    top: 780px;
+    height: 187px;
+    width: 391px; }
+    #section_saleInformation .combination_obj4 .postcard {
+      position: absolute;
+      height: 76px;
+      width: 92.233px;
+      margin: 0px 15px;
+      left: 0px;
+      top: 0px; }
+    #section_saleInformation .combination_obj4 .ticket {
+      position: absolute;
+      left: 133px;
+      top: 0px;
+      height: 67.4743px;
+      width: 123px;
+      margin: 4px 0px; }
+    #section_saleInformation .combination_obj4 .bag {
+      position: absolute;
+      left: 266px;
+      top: 0px;
+      height: 76px;
+      width: 49.0885px;
+      margin: 0px 36px; }
+    #section_saleInformation .combination_obj4 .book {
+      position: absolute;
+      height: 76px;
+      width: 123px;
+      left: 0px;
+      top: 86px;
+      height: 76px;
+      width: 59.0831px;
+      margin: 0px 31px; }
+    #section_saleInformation .combination_obj4 .cd {
+      position: absolute;
+      left: 133px;
+      top: 86px;
+      height: 76px;
+      width: 86.6047px;
+      margin: 0px 18px; }
+  #section_saleInformation #textNewFive {
+    left: 490px;
+    width: 447px;
+    position: absolute;
+    top: 991px; }
+    #section_saleInformation #textNewFive p {
+      font-size: 11px;
+      line-height: 1.8em;
+      text-align: justify;
+      letter-spacing: 0.1em; }
+    #section_saleInformation #textNewFive .title1 {
+      letter-spacing: 0.1em;
+      font-size: 11px;
+      line-height: 1.8em;
+      text-align: justify; }
+    #section_saleInformation #textNewFive .title2 {
+      letter-spacing: 0.1em;
+      font-size: 20px;
+      line-height: 1.8em;
+      text-align: justify; }
+  #section_saleInformation .preOrderBtn.order1#obj4 {
+    left: 881px;
+    top: 991px; }
+
+#section_aboutFisfisa {
+  height: 781px;
+  width: 100%;
+  position: absolute;
+  top: 4141px;
+  color: white; }
+  #section_aboutFisfisa .about {
+    left: 46px;
+    width: 345px;
+    position: absolute;
+    top: 248px;
+    font-size: 16px;
+    line-height: 1.8em; }
+  #section_aboutFisfisa .about1 {
+    left: 46px;
+    width: 270px;
+    position: absolute;
+    top: 329px;
+    font-size: 11px;
+    line-height: 1.8em;
+    text-align: justify; }
+  #section_aboutFisfisa .about2 {
+    font-size: 11px;
+    line-height: 1.8em;
+    text-align: justify;
+    left: 364px;
+    width: 270px;
+    position: absolute;
+    top: 329px; }
+
+#footer {
+  height: 232px;
+  width: 100%;
+  position: absolute;
+  top: 4922px; }
+  #footer .logo {
+    left: 0px;
+    position: absolute;
+    top: 18px;
+    width: 196px;
+    height: 102px; }
+  #footer .allauthor {
+    left: 696px;
+    position: absolute;
+    top: 61px;
+    width: 257px;
+    height: 59px; }
+  #footer .desinger {
+    color: white;
+    left: 18px;
+    width: 270px;
+    position: absolute;
+    top: 137px;
+    font-size: 9px;
+    line-height: 1.8em;
+    letter-spacing: 0.1em; }
+  #footer .contact {
+    color: white;
+    left: 683px;
+    width: 270px;
+    position: absolute;
+    top: 137px;
+    font-size: 9px;
+    line-height: 1.8em;
+    text-align: right;
+    letter-spacing: 0.1em; }
+
+.preOrderBtn {
+  height: 32px;
+  width: 99px;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background-repeat: no-repeat;
+  background-image: url("../image/preOrderBtn.png"); }
+  .preOrderBtn:hover {
+    background-image: url("../image/preOrderBtn2.png"); }
+
+.background .section_aboutIsland_Bgc {
+  height: 1053px;
+  width: 100%;
+  position: absolute;
+  top: 842px;
+  background-image: url("../image/bgc/aboutIsland_Bgc.png");
+  background-size: 1906px 1053px; }
+
+.background .section_movieIntroduction_Bgc {
+  height: 1017px;
+  width: 100%;
+  position: absolute;
+  top: 1895px;
+  background-image: url("../image/bgc/movieIntroduction_Bgc.png");
+  background-size: 1906px 1017px;
+  background-attachment: fixed; }
+
+.background .section_saleInformation_part3Bgc {
+  height: 1229px;
+  width: 100%;
+  position: absolute;
+  top: 2912px;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: 1906px 1053px; }
+
+.background .section_aboutFisfisa_Bgc {
+  height: 781px;
+  width: 100%;
+  position: absolute;
+  top: 4141px;
+  background-image: url("../image/bgc/aboutFisfisa_Bgc.png");
+  background-size: 1906px 915px; }
+
+#pop-up {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  left: 0;
+  top: 0;
+  overflow-x: auto;
+  overflow-y: scroll;
+  position: fixed;
+  z-index: 99999; }
+  #pop-up .content {
+    position: absolute;
+    pointer-events: auto;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    width: 982px;
+    height: 979px;
+    visibility: inherit; }
+    #pop-up .content .logo {
+      left: 7px;
+      position: absolute;
+      top: -10px;
+      width: 167px;
+      height: 105px;
+      -o-object-fit: cover;
+      object-fit: cover; }
+    #pop-up .content .photo {
+      left: 34px;
+      position: absolute;
+      top: 120px;
+      width: 534px;
+      height: 301px;
+      -o-object-fit: cover;
+      object-fit: cover; }
+    #pop-up .content .block {
+      left: 577px;
+      width: 366px;
+      position: absolute;
+      top: 120px; }
+      #pop-up .content .block p {
+        font-size: 9px;
+        line-height: 3em;
+        text-align: right;
+        letter-spacing: 0.05em;
+        color: white; }
+    #pop-up .content .textNew {
+      left: 34px;
+      width: 533.59 px;
+      position: absolute;
+      top: 447px; }
+      #pop-up .content .textNew * {
+        color: white; }
+      #pop-up .content .textNew .title {
+        font-size: 20px;
+        line-height: 1.8em;
+        text-align: justify;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        font-family: ｍｓ ｐ明朝,ms pmincho,ヒラギノ明朝 pro w3,hiragino mincho pro,serif; }
+      #pop-up .content .textNew .title2 {
+        font-size: 14px;
+        line-height: 1.8em;
+        text-align: justify;
+        letter-spacing: 0.05em;
+        font-family: ｍｓ ｐ明朝,ms pmincho,ヒラギノ明朝 pro w3,hiragino mincho pro,serif; }
+      #pop-up .content .textNew .intro {
+        font-size: 11px;
+        line-height: 1.8em;
+        text-align: justify;
+        letter-spacing: 0.05em;
+        color: #C7C7C7;
+        font-family: メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif; }
+    #pop-up .content .textNew2 {
+      left: 34px;
+      width: 252px;
+      position: absolute;
+      top: 773px; }
+      #pop-up .content .textNew2 .author {
+        font-size: 11px;
+        line-height: 1.8em;
+        text-align: justify;
+        letter-spacing: 0.05em;
+        color: white; }
+      #pop-up .content .textNew2 .intro {
+        font-size: 11px;
+        line-height: 1.8em;
+        text-align: justify;
+        letter-spacing: 0.05em;
+        color: #C7C7C7;
+        font-family: メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
+        word-wrap: break-word; }
+    #pop-up .content .textNew3 {
+      left: 316px;
+      width: 252px;
+      position: absolute;
+      top: 738px; }
+      #pop-up .content .textNew3 .intro {
+        font-size: 11px;
+        line-height: 1.8em;
+        text-align: justify;
+        letter-spacing: 0.05em;
+        color: #C7C7C7;
+        font-family: メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif; }
+    #pop-up .content .pic1 {
+      left: 891px;
+      position: absolute;
+      -webkit-transform: rotate(270deg) translateZ(0px);
+      transform: rotate(270deg) translateZ(0px);
+      top: 482px;
+      width: 87px;
+      height: 17px; }
+    #pop-up .content .pic2 {
+      left: 900px;
+      position: absolute;
+      -webkit-transform: rotate(270deg) translateZ(0px);
+      transform: rotate(270deg) translateZ(0px);
+      top: 624px;
+      width: 68px;
+      height: 17px; }
+    #pop-up .content .pic3 {
+      left: 630px;
+      position: absolute;
+      top: 447px;
+      width: 198px;
+      height: 219px;
+      -o-object-fit: cover;
+      object-fit: cover; }
+    #pop-up .content .button {
+      left: 844px;
+      width: 99px;
+      position: absolute;
+      top: 867px;
+      height: 32px; }
+    #pop-up .content .exit {
+      left: 956px;
+      width: 25px;
+      position: absolute;
+      cursor: pointer;
+      top: 0px;
+      height: 25px; }

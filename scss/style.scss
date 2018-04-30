@@ -1,0 +1,899 @@
+*{
+  // border:1px solid black;
+  box-sizing:border-box;
+  position:relative;
+  font-family:ｍｓ ｐゴシック,ms pgothic,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,osaka,sans-serif;
+  p{
+    margin: 0;
+    
+  }
+  color:#C7C7C7;
+}
+
+body,html{
+  margin: 0;
+  padding: 0;
+  height:5293px;
+}
+
+.content{
+  width:980px;
+  left:50%;
+  transform:translatex(-50%);
+}
+
+.video{
+  position: fixed;
+  right: 0;
+  top:0;
+  width:100%;
+}
+
+
+#navbar{
+  height:139px;
+  display:flex;
+  justify-content:center;
+  // background: #000;
+  .navContent{
+    width:980px;
+    height:139px;
+    display:flex;
+    align-items:center;
+    .navItem{
+      display:inline-block;
+      margin-left:46px;
+      margin-right:46px;
+      color:white;
+      font-size: 14px;
+      &.view{
+        color:orange;
+      }
+      cursor: pointer;
+    }
+  }
+}
+
+#header{
+  height:842px;
+  width:980px;
+  display:flex;
+  justify-content:center;
+  // background-color: #000;
+  .headerImg{
+    width:883px;
+    height:448px;
+    top:25px;
+  }
+  .img1{
+      width: 196px; 
+      height: 44px;
+      left: 156px; 
+      position: absolute; 
+      top: 561px;
+  }
+    
+  .textNew{
+    font-size: 12px;
+    text-align:right;
+    position:absolute;
+    color:white;
+    &.text1{
+      left: 156px;
+      top: 526px;
+    }
+    &.text2{
+      left: 498px;
+      top: 562px;
+    }
+    &.text3{
+      left: 649px; 
+      position: absolute; 
+      top: 580px;
+      font-size: 16px;
+      letter-spacing:0.1em;
+      text-align:left;
+    }
+  }
+}
+
+#section_aboutIsland{
+  height:1053px;
+  width:100%;
+  position:absolute;
+  top:842px;
+  // background-color: red;
+  .descImg{
+    left: 592px; 
+    position: absolute; 
+    top: 213px;
+    width: 175px; 
+    height: 213px;
+  }
+  .title{
+    letter-spacing:0.1em;
+    color:white;
+    left: 46px; 
+    width: 345px; 
+    position: absolute; 
+    top: 526px;
+    font-size:16px;
+    font-weight:bold;
+  }
+  .dash{
+    left: 46px; 
+    width: 14px; 
+    position: absolute; 
+    top: 581px; 
+    height: 1px;
+    background-color: #fff;
+  }
+  .descript{
+    color:white;
+    left: 46px; 
+    width: 287px; 
+    position: absolute; 
+    top: 607px;
+    font-size:11px; 
+    line-height:1.8em; 
+    text-align:justify;
+  }
+  .youtube{
+    left: 413px; 
+    position: absolute; 
+    top: 587px;
+  }
+  .partBgc{
+    width:100%;
+    height:100%;
+  }
+}
+
+#section_movieIntroduction{
+  height:1017px;
+  width:100%;
+  position:absolute;
+  top: 1895px;
+  color:white;
+  // background-color: yellow;
+  .movieIntro{
+    left: 53px; 
+    width: 345px; 
+    position: absolute; 
+    top: 141px;
+    letter-spacing:0.1em;
+    font-size:16px; 
+    line-height:1.8em;
+  }
+  .movieIntroContent{
+    left: 53px; 
+    width: 237px; 
+    position: absolute; 
+    top: 222px;
+    .movieIntro1{
+      font-size:14px; 
+      line-height:1.8em; 
+      text-align:justify;
+    }
+    .movieIntro2{
+      font-size:11px; 
+      line-height:1.8em; 
+      text-align:justify;
+    }
+  }
+  .movieTheater{
+    left: 393px; 
+    width: 345px; 
+    position: absolute; 
+    top: 141px;
+    font-size:16px; 
+    line-height:1.8em;
+  }
+  .theaterContent{
+    left: 393px; 
+    width: 350px; 
+    position: absolute; 
+    top: 222px;
+    .theaters{
+      font-size:11px; 
+      line-height:1.8em;
+      letter-spacing:0.1em;
+    }
+  }
+  .moreInfroBtn{
+    left: 644px; 
+    width: 99px; 
+    position: absolute; 
+    top: 302px; 
+    height: 32px;
+    transition:0.5s;
+    background-repeat:no-repeat;
+    background-image: url("../image/moreInfoBtn.png"); 
+    &:hover{
+       background-image: url("../image/moreInfoBtn2.png");
+    }
+  }
+  
+  .btn1{
+    left: 41px; 
+    width: 144px; 
+    position: absolute; 
+    top: 416px; 
+    height: 124px;
+    background-image: url("../image/btn1.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    transition:.5s;
+    &:hover{
+      background-image: url("../image/btn1-2.png");
+    }
+  }
+  .btn2{
+    left: 215px; 
+    width: 216px; 
+    position: absolute; 
+    top: 416px; 
+    height: 124px;
+    background-image:
+      url("../image/btn2.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    transition:.5s;
+    &:hover{
+      background-image:url("../image/btn2-2.png");
+    }    
+  }
+  .btn3{
+    left: 471px; 
+    width: 259px; 
+    position: absolute; 
+    top: 416px; 
+    height: 124px;
+    background-image:
+      url("../image/btn3.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    transition:.5s;
+    &:hover{
+      background-image:url("../image/btn3-2.png");
+    }    
+  }
+  .btn4{
+    left: 41px; 
+    width: 144px; 
+    position: absolute; 
+    top: 609px; 
+    height: 124px;
+    background-image:
+      url("../image/btn4.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    transition:.5s;
+    &:hover{
+      background-image:url("../image/btn4-2.png");
+    }    
+  }
+  .btn5{
+    left: 223px; 
+    width: 177px; 
+    position: absolute; 
+    top: 609px; 
+    height: 124px;
+    background-image:
+      url("../image/btn5.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    transition:.5s;
+    &:hover{
+      background-image:url("../image/btn5-2.png");
+    }    
+  }
+  .btn6{
+    left: 456px; 
+    width: 93px; 
+    position: absolute; 
+    top: 609px; 
+    height: 124px;
+    background-image:
+      url("../image/btn6.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    transition:.5s;
+    &:hover{
+      background-image:url("../image/btn6-2.png");
+    }    
+  }
+  .btn7{
+    left: 620px; 
+    width: 147px; 
+    position: absolute; 
+    top: 609px; 
+    height: 124px;
+    background-image:
+      url("../image/btn7.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    transition:.5s;
+    &:hover{
+      background-image:url("../image/btn7-2.png");
+    } 
+  }
+  #order1{
+    top: 818px; 
+    left: 41px; 
+  }
+}
+
+#section_saleInformation{
+  height:1229px;
+  width:100%;
+  position: absolute; 
+  top: 2912px;
+  // background-color: blue;
+  color:white;
+  .part3_title{
+    left: 46px; 
+    width: 345px; 
+    position: absolute; 
+    top: 135px;
+  }
+  .combination{
+    left: 46px; 
+    width: 537px; 
+    position: absolute; 
+    top: 216px;
+    .comination_title{
+      font-size:14px; 
+      line-height:1.8em; 
+      text-align:justify;
+      letter-spacing:0.1em;
+    }
+    .combination_info{
+      font-size:11px; 
+      line-height:1.8em; 
+      text-align:justify;
+      letter-spacing:0.1em;
+    }
+  }
+  .combination_obj1{
+      left: 46px; 
+      position: absolute; 
+      top: 444px; 
+      height: 101px; 
+      width: 324px;
+      
+      .postcard{
+        position: absolute; 
+        left: 0px; 
+        top: 0px;
+        height: 76px;
+        width: 92.233px;
+        margin: 0px 4px;
+        
+      }
+      .ticket{
+        position: absolute; 
+        left: 111px; 
+        top: 0px;
+        height: 55.4057px; 
+        width: 101px; 
+        margin: 10px 0px;
+      }
+      .forum{
+        position: absolute; 
+        left: 222px; 
+        top: 0px;
+        height: 76px; 
+        width: 51.2387px; 
+        margin: 0px 24px;
+      }
+    }
+    #textNewOne {
+      left: 46px; 
+      width: 411px; 
+      position: absolute; 
+      top: 561px;
+      p {
+        font-size:11px; 
+        line-height:1.8em; 
+        text-align:justify;
+        letter-spacing:0.1em;
+      }
+      .title1{
+        letter-spacing:0.1em;
+        font-size:11px; 
+        line-height:1.8em; 
+        text-align:justify;
+      }
+      .title2{
+        letter-spacing:0.1em;
+        font-size:20px;
+        line-height:1.8em; text-align:justify;
+      }
+    }
+    #textNewTwo{
+      left: 46px; 
+      width: 411px; 
+      position: absolute; 
+      top: 749px;
+      p {
+        font-size:11px; 
+        line-height:1.8em; 
+        text-align:justify;
+        letter-spacing:0.1em;
+      }
+    }
+    .preOrderBtn.order1#obj1{
+      top: 561px;
+      left: 358px; 
+    }
+    .combination_obj2{
+      left: 490px; 
+      position: absolute; 
+      top: 444px; 
+      height: 101px; 
+      width: 391px;
+      .ticket{
+        position: absolute; 
+        height: 67.4743px; 
+        width: 123px; 
+        margin: 4px 0px;
+        top: 0px; 
+        left: 0px;
+      }
+      .pen{
+        position: absolute; 
+        height: 56.1761px; 
+        width: 123px; 
+        margin: 9px 0px;
+        left: 133px; 
+        top: 0px;
+      }
+    }
+    #textNewThird{
+      left: 490px; 
+      width: 442px; 
+      position: absolute;
+       top: 561px;
+      p {
+        font-size:11px; 
+        line-height:1.8em; 
+        text-align:justify;
+        letter-spacing:0.1em;
+      }
+      .title1{
+        letter-spacing:0.1em;
+        font-size:11px; 
+        line-height:1.8em; 
+        text-align:justify;
+      }
+      .title2{
+        letter-spacing:0.1em;
+        font-size:20px;
+        line-height:1.8em; text-align:justify;
+      }
+
+    }
+    .preOrderBtn.order1#obj2{
+      left: 881px; 
+      top: 561px; 
+    }
+    .preOrderBtn.order1#obj1-2{
+      left: 358px; 
+      top: 749px; 
+    }
+    .combination_obj3{
+      left: 46px; 
+      position: absolute; 
+      top: 926px; 
+      height: 101px; 
+      width: 324px;
+      .postcard{
+        height: 76px; 
+        width: 92.233px; 
+        margin: 0px 4px;
+        position: absolute;
+        left: 0px; 
+        top: 0px;
+      }
+      .ticket{
+        height: 55.4057px; 
+        width: 101px; 
+        margin: 10px 0px;
+        position: absolute; 
+        left: 111px; 
+        top: 0px;
+      }
+      .lecture{
+        position: absolute;
+        left: 222px; 
+        top: 0px;
+        height: 76px;
+        width: 48.8738px; 
+        margin: 0px 26px;
+      }
+    }
+    #textNewFour{
+      left: 46px; 
+      width: 411px; 
+      position: absolute; 
+      top: 1060px;
+      p {
+        font-size:11px; 
+        line-height:1.8em; 
+        text-align:justify;
+        letter-spacing:0.1em;
+      }
+      .title1{
+        letter-spacing:0.1em;
+        font-size:11px; 
+        line-height:1.8em; 
+        text-align:justify;
+      }
+      .title2{
+        letter-spacing:0.1em;
+        font-size:20px;
+        line-height:1.8em; text-align:justify;
+      }
+    }
+    .preOrderBtn.order1#obj3{
+      left: 358px; 
+      top: 1060px; 
+    }
+    .combination_obj4{
+      left: 490px; 
+      position: absolute; 
+      top: 780px; 
+      height: 187px; 
+      width: 391px;
+      .postcard{
+        position: absolute; 
+        height: 76px; 
+        width: 92.233px; 
+        margin: 0px 15px;
+        left: 0px; 
+        top: 0px;
+      }
+      .ticket{
+        position: absolute; 
+        left: 133px; 
+        top: 0px;
+        height: 67.4743px; 
+        width: 123px; 
+        margin: 4px 0px;
+      }
+      .bag{
+        position: absolute;
+        left: 266px; 
+        top: 0px;
+        height: 76px;
+        width: 49.0885px; 
+        margin: 0px 36px;
+      }
+      .book{
+        position: absolute; height: 76px; width: 123px; left: 0px; top: 86px;
+        height: 76px; width: 59.0831px; margin: 0px 31px;
+      }
+      .cd{
+        position: absolute; 
+        left: 133px; 
+        top: 86px;
+        height: 76px; 
+        width: 86.6047px; 
+        margin: 0px 18px;
+      }
+    }
+    #textNewFive{
+      left: 490px; 
+      width: 447px; 
+      position: absolute; 
+      top: 991px;
+      p {
+        font-size:11px; 
+        line-height:1.8em; 
+        text-align:justify;
+        letter-spacing:0.1em;
+      }
+      .title1{
+        letter-spacing:0.1em;
+        font-size:11px; 
+        line-height:1.8em; 
+        text-align:justify;
+      }
+      .title2{
+        letter-spacing:0.1em;
+        font-size:20px;
+        line-height:1.8em; text-align:justify;
+      }
+    }
+    .preOrderBtn.order1#obj4{
+      left: 881px; 
+      top: 991px; 
+    }
+}
+#section_aboutFisfisa{
+  height:781px;
+  width:100%;
+  position: absolute; 
+  top: 4141px;
+  // background-color: orange;
+  color:white;
+  .about{
+    left: 46px; 
+    width: 345px; 
+    position: absolute; 
+    top: 248px;
+    font-size:16px; 
+    line-height:1.8em;
+  }
+  .about1{
+    left: 46px; 
+    width: 270px; 
+    position: absolute; 
+    top: 329px;
+    font-size:11px; 
+    line-height:1.8em; 
+    text-align:justify;
+  }
+  .about2{
+    font-size:11px; 
+    line-height:1.8em; 
+    text-align:justify;
+    left: 364px; 
+    width: 270px; 
+    position: absolute; 
+    top: 329px;
+  }
+}
+
+#footer{
+  height:232px;
+  width:100%;
+  position: absolute; 
+  top: 4922px;
+  // background-color: black;
+  .logo{
+    left: 0px; position: absolute; top: 18px; width: 196px; height: 102px;
+  }
+  .allauthor{
+    left: 696px; 
+    position: absolute; 
+    top: 61px; 
+    width: 257px; 
+    height: 59px;
+  }
+  .desinger{
+    color:white;
+    left: 18px; 
+    width: 270px; 
+    position: absolute; 
+    top: 137px;
+    font-size:9px; 
+    line-height:1.8em;
+    letter-spacing:0.1em;
+  }
+  .contact{
+    color:white;
+    left: 683px; 
+    width: 270px; 
+    position: absolute; 
+    top: 137px;
+    font-size:9px; 
+    line-height:1.8em; 
+    text-align:right;
+    letter-spacing:0.1em;
+  }
+}
+
+.preOrderBtn{
+  height: 32px;
+  width: 99px; 
+  position: absolute; 
+  transition:0.5s;
+  background-repeat:no-repeat;
+  background-image: url("../image/preOrderBtn.png"); 
+  &:hover{
+    background-image: url("../image/preOrderBtn2.png"); 
+  }
+}
+
+.background{
+  .section_aboutIsland_Bgc{
+    height:1053px;
+    width:100%;
+    position:absolute;
+    top:842px;
+    background-image: url("../image/bgc/aboutIsland_Bgc.png");
+    background-size: 1906px 1053px;
+  }
+  .section_movieIntroduction_Bgc{
+    height:1017px;
+    width:100%;
+    position:absolute;
+    top: 1895px;
+    background-image: url("../image/bgc/movieIntroduction_Bgc.png");
+    background-size: 1906px 1017px;
+    background-attachment:fixed;
+  }
+  .section_saleInformation_part3Bgc{
+    height:1229px;
+    width:100%;
+    position: absolute; 
+    top: 2912px;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: 1906px 1053px;
+  }
+  .section_aboutFisfisa_Bgc{
+    height:781px;
+    width:100%;
+    position: absolute; 
+    top: 4141px;
+    background-image: url("../image/bgc/aboutFisfisa_Bgc.png");
+    background-size: 1906px 915px;
+  }
+}
+
+#pop-up{
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  left: 0;
+  top: 0;
+  overflow-x: auto;
+  overflow-y: scroll;
+  position: fixed;
+  z-index: 99999;
+  .content{
+    position: absolute; 
+    pointer-events: auto; 
+    margin-left: auto; 
+    margin-right: auto;
+    top: 0px; 
+    width: 982px; 
+    height: 979px; 
+    visibility: inherit;
+    .logo{
+      left: 7px; 
+      position: absolute; 
+      top: -10px; 
+      width: 167px; 
+      height: 105px;
+      object-fit: cover;
+    }
+    .photo{
+      left: 34px; 
+      position: absolute; 
+      top: 120px; 
+      width: 534px; 
+      height: 301px;
+      object-fit: cover;
+    }
+    .block{
+      left: 577px; 
+      width: 366px; 
+      position: absolute; 
+      top: 120px;
+      p{
+        font-size:9px; 
+        line-height:3em; 
+        text-align:right;
+        letter-spacing:0.05em;
+        color:white;
+      }
+    }
+    .textNew{
+      left: 34px; 
+      width: 533.59 px;
+      position: absolute; 
+      top: 447px;
+      *{
+        color:white;
+      }
+      
+      .title{
+        font-size:20px; 
+        line-height:1.8em; 
+        text-align:justify;
+        font-weight:bold;
+        letter-spacing:0.05em;
+        font-family: ｍｓ ｐ明朝,ms pmincho,ヒラギノ明朝 pro w3,hiragino mincho pro,serif;
+
+      }
+      .title2{
+        font-size:14px; 
+        line-height:1.8em; 
+        text-align:justify;
+        letter-spacing:0.05em;
+        font-family: ｍｓ ｐ明朝,ms pmincho,ヒラギノ明朝 pro w3,hiragino mincho pro,serif;
+
+      }
+      .intro{
+        font-size:11px; 
+        line-height:1.8em; 
+        text-align:justify;
+        letter-spacing:0.05em;
+        color:#C7C7C7;
+        font-family:メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
+      }
+    }
+    .textNew2{
+      left: 34px; 
+      width: 252px; 
+      position: absolute; 
+      top: 773px;
+      .author{
+        font-size:11px; 
+        line-height:1.8em; 
+        text-align:justify;
+        letter-spacing:0.05em;
+        color:white;
+      }
+      .intro{
+        font-size:11px; 
+        line-height:1.8em; 
+        text-align:justify;
+        letter-spacing:0.05em;
+        color:#C7C7C7;
+        font-family:メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
+        word-wrap: break-word;
+      }
+    }
+    .textNew3{
+      left: 316px; 
+      width: 252px; 
+      position: absolute; 
+      top: 738px;
+      .intro{
+        font-size:11px; 
+        line-height:1.8em; 
+        text-align:justify;
+        letter-spacing:0.05em;
+        color:#C7C7C7;
+        font-family:メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
+
+      }
+    }
+    .pic1{
+      left: 891px; 
+      position: absolute; 
+      transform: rotate(270deg) translateZ(0px); 
+      top: 482px; 
+      width: 87px; 
+      height: 17px;
+    }
+    .pic2{
+      left: 900px; 
+      position: absolute; 
+      transform: rotate(270deg) translateZ(0px); 
+      top: 624px; 
+      width: 68px; 
+      height: 17px;
+    }
+    .pic3{
+      left: 630px; 
+      position: absolute; 
+      top: 447px; 
+      width: 198px; 
+      height: 219px;
+      object-fit: cover;
+    }
+    .button{
+      left: 844px; 
+      width: 99px; 
+      position: absolute; 
+      top: 867px; 
+      height: 32px;
+
+    }
+    .exit{
+      left: 956px; 
+      width: 25px; 
+      position: absolute; 
+      cursor: pointer; 
+      top: 0px; 
+      height: 25px;
+
+    }
+  }
+}
