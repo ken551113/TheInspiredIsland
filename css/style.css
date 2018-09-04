@@ -26,6 +26,15 @@ body, html {
   top: 0;
   width: 100%; }
 
+.bgcPatten {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url("../image/patten.png");
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%; }
+
 #navbar {
   height: 139px;
   display: -webkit-box;
